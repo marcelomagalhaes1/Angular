@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Produtos Works</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+    }
+
+    section.produtos {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    section.produtos h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #333;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card .content {
+      padding: 15px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .card h3 {
+      margin: 0 0 10px;
+      font-size: 18px;
+      color: #222;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 16px;
+      font-weight: bold;
+      color: #28a745;
+      margin-bottom: 15px;
+    }
+
+    .btn {
+      background: #007bff;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <!-- Substitui o <p>lista-de-produtos works!</p> -->
+  <section class="produtos">
+    <h2>Lista de Produtos</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://picsum.photos/400/200?random=9" alt="Produto 1">
+        <div class="content">
+          <h3>Produto 1</h3>
+          <p>Descrição breve do produto 1.</p>
+          <span class="price">R$ 99,90</span>
+          <a href="#" class="btn">Comprar</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://picsum.photos/400/200?random=11" alt="Produto 2">
+        <div class="content">
+          <h3>Produto 2</h3>
+          <p>Descrição breve do produto 2.</p>
+          <span class="price">R$ 149,90</span>
+          <a href="#" class="btn">Comprar</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://picsum.photos/400/200?random=13" alt="Produto 3">
+        <div class="content">
+          <h3>Produto 3</h3>
+          <p>Descrição breve do produto 3.</p>
+          <span class="price">R$ 79,90</span>
+          <a href="#" class="btn">Comprar</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
